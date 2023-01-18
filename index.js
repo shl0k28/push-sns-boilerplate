@@ -67,7 +67,7 @@ app.post("/sns", async (req, res) => {
     }
 });
 
-const port = 6000;
+const port = process.env.PORT || 8080;
 app.listen(port, () => {
     console.log(`SNS app listening on port ${port}`);
 });
