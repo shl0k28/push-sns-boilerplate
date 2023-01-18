@@ -71,3 +71,9 @@ const port = process.env.PORT || 8080;
 app.listen(port, () => {
     console.log(`SNS app listening on port ${port}`);
 });
+
+app.get('/', (req, res) => {
+    res.status(200).json({
+        "message": "The service is active"
+    })
+})
